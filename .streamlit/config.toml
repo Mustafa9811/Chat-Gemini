@@ -1,0 +1,14 @@
+[browser]
+serverAddress = "0.0.0.0"
+gatherUsageStats = false
+
+[server]
+enableCORS = false
+enableXsrfProtection = false
+
+[theme]
+base="dark"  # or "light" based on your preference
+
+# Disable the menu altogether (this hides the hamburger menu in the top right)
+[deprecation]
+showMenu = false
