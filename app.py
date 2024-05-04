@@ -23,9 +23,9 @@ Hi, I'm Tax Chacha! Your go to AI Assistant for anything related to UAE Corporat
 
 add_auth(required=True)
 
-st.write(f"Subscription Status: {st.session_state.user_subscribed}")
-st.write("Congratulations! You're all set and subscribed!")
-st.write(f"By the way, your email is: {st.session_state.email}")
+# st.write(f"Subscription Status: {st.session_state.user_subscribed}")
+# st.write("Congratulations! You're all set and subscribed!")
+# st.write(f"By the way, your email is: {st.session_state.email}")
 
 GOOGLE_API_KEY= st.secrets['GOOGLE_API_KEY']
 
