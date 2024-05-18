@@ -3,6 +3,12 @@ import google.generativeai as genai
 from sentence_transformers import SentenceTransformer
 from pinecone import Pinecone
 
+# Set the port to the environment variable PORT if it exists, else default to 8501
+PORT = int(os.environ.get("PORT", 8501))
+
+if __name__ == "__main__":
+    st.run(port=PORT)
+
 # --- Configuration ---
 PINECONE_API_KEY = "dbd40194-203e-4673-a890-da85f7b31128"
 PINECONE_ENVIRONMENT = "us-east-1"  # e.g., 'us-west1-gcp'
