@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/app.py"
+    }
+  ],
+  "env": {
+    "PINECONE_API_KEY": "dbd40194-203e-4673-a890-da85f7b31128",
+    "GOOGLE_API_KEY": "AIzaSyAcHMRI-QXesOMsHuj2EZ9kJ3xHf88s4R8"
+  },
+  "regions": ["all"]
+}
